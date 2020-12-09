@@ -13,7 +13,7 @@ Contents:
 4. [PART 4 Third pass: Densenet training](https://github.com/chennat811/Plant_disease_detection/blob/main/Project5_PART4_Third_Pass_Densenet.ipynb)
 5. [PART 5 Scraping wikipedia](https://github.com/chennat811/Plant_disease_detection/blob/main/Project5_PART5__Scrape_summaries_recommendations_Wiki.ipynb)
 6. Used [helper functions](https://github.com/chennat811/Plant_disease_detection/blob/main/utilities.py)
-7. Created a [Streamlit app](https://github.com/chennat811/Plant_disease_detection/blob/main/for_app2/app2.py) [Heroku app](http://plant-disease-detector-88.herokuapp.com/)
+7. Created a [Streamlit app](https://github.com/chennat811/Plant_disease_detection/blob/main/for_app2/app2.py) Deployed on [Heroku](http://plant-disease-detector-88.herokuapp.com/)
 
 ### Background
 Plant infectious diseases are affecting crop yields all over the world. An average of 40% yield losses are experienced when a disease hits and in developing worlds they can experience up to 100% yield loss. It is being exacerbated by climate change because some pathogens favor warmer temperatures which helps them propagate more quickly.
@@ -35,7 +35,7 @@ There was slight imbalance in the dataset, 3 out of 39 classes had more images t
 
 Corn: Northern Leaf Blight, tomato: late blight, and tomato: target spot had lower recall and higher precision, meaning that it does very well at identifying the true positives but may miss alot of them because the model is picky. Since farmers would want to be safe than sorry, the disease should always pick up the positives even if a couple healthy plants are killed, thus recall should be improved in these classes.
 
-This model was deployed on Heroku, using Streamlit to build the app.[Heroku App](http://plant-disease-detector-88.herokuapp.com/)
+This model was deployed on Heroku, using Streamlit to build the app. [Heroku App](http://plant-disease-detector-88.herokuapp.com/)
 
 ### Tools Used
 Pandas, Matplotlib, Keras, Streamlit, Heroku, Wikipedia API
