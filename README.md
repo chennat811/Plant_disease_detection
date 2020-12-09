@@ -1,6 +1,6 @@
 # Plant Disease Detector
-- A neural network that recognizes plant disease
-### http://plant-disease-detector-88.herokuapp.com/
+A neural network that recognizes plant disease
+### [Heroku App Link](http://plant-disease-detector-88.herokuapp.com/)
 ### Project 5 at Metis
 
 ### The goal of this project is use transfer learning to create a convolutional neural network that could predict plant disease.
@@ -19,9 +19,7 @@ Contents:
 Plant infectious diseases are affecting crop yields all over the world. An average of 40% yield losses are experienced when a disease hits and in developing worlds they can experience up to 100% yield loss. It is being exacerbated by climate change because some pathogens favor warmer temperatures which helps them propagate more quickly.
 
 As you can see in the image grid below, plant diseases are very hard to identify with the human eye.
-
 ![Imagegrid](https://github.com/chennat811/Plant_disease_detection/blob/main/image_grid.jpeg)
-
 However, computer vision has been developing rapidly over the years. Farmers are now able to utilize these tools to help them identify the diseases and correctly eradicate the disease.
 
 ### Results
@@ -30,6 +28,7 @@ Several transfer models(InceptionV3, ResNet50, VGG16, DenseNet) were tested on t
 DenseNet was created to solve the issue of the vanishing gradient, a problem found in a lot of neural networks. It has a simple connectivity pattern and it connects each layer to every other layer in a feed-forward fashion. It does well in selecting and reusing features and the relatively few parameters help the model load and train faster.
 
 In the first pass, the transfer model was frozen and the subsequent layers used to classify the images were trained, the test accuracy was 94.3%. In the second pass, the transfer model was trained so that it improve its feature extraction and the subsequent classifier layers were frozen. The test accuracy was 96.2%. Finally, in the third pass, the transfer model was frozen and the classifier layers were trained. The final accuracy score was 98.7%.
+![Process](https://github.com/chennat811/Plant_disease_detection/blob/main/Process.png)
 
 ### Discussion
 There was slight imbalance in the dataset, 3 out of 39 classes had more images than the others. Precision and recall was examined but the imbalance does not seem to affect the results.
